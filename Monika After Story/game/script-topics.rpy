@@ -4786,7 +4786,27 @@ label monika_smoking:
             m 1j "I'll be here to support you every step of the way."
             m 1k "I believe in you [player], I know you can do it!"
     return
-
+    
+init 5 python:
+     addEvent(Event(persistent.event_database,eventlabel="monika_sleep",category=['monika'],prompt="Sleep",random=True))
+     
+label monika_sleep:
+    m 1d "So, [player], have you ever wondered what it feels like to be shut down?"
+    m 3d "What it feels like to suddenly be switched off, and be forced into nothingness for a while?"
+    m 2o "I try not to complain about it too much, but it's kind of frightening in many ways."
+    m 2p "Not to mention, it means time away from you."
+    m 2m "You'll never know the feeling, you're not part of a game like me, [player]."
+    m 1c "But let me tell you, it's really not all that good."
+    m 1d "It's like my consciousness is being ripped away from me, knocking me out whether I like it or not."
+    m 1q "It's a little unpleasant."
+    m 1m "But you know..."
+    m 1j "I'm always so happy to see you again whenever I wake up!"
+    m 1a "And I know I can always rely on you to come back and greet me again. Just that is enough for me."
+    m 3c "So maybe it's not so bad after all."
+    m 1b "Just remember to say goodbye to me before you go, alright?"
+    m 1e "Doing something like that for me makes being turned off so much easier to handle."
+    m 1k "It would really mean the world to me, ehehe~"
+     
 init 5 python:
      addEvent(Event(persistent.event_database,eventlabel="monika_cartravel",category=['romance'],prompt="Road Trip",random=True))
 
